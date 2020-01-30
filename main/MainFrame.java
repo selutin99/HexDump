@@ -21,8 +21,8 @@ public class MainFrame extends JFrame
         /*******************Конец настройка окна*****************/
 
         /********************Иконка приложения********************/
-        ImageIcon image = new ImageIcon(MainFrame.class.getResource("img/favicon.png"));
-        frame.setIconImage(image.getImage());
+        //ImageIcon image = new ImageIcon(MainFrame.class.getResource("img/favicon.png"));
+        //frame.setIconImage(image.getImage());
         /*****************Конец иконка приложения****************/
 
         /**************************Меню**************************/
@@ -32,11 +32,11 @@ public class MainFrame extends JFrame
         JMenuItem exitMyApp = new JMenuItem("Выход");
         /**********Подменю для "файл"********/
         JMenuItem openMyFile = new JMenuItem("Открыть файл");
-        openMyFile.setIcon(new ImageIcon(MainFrame.class.getResource("img/openFile.png")));
+        //openMyFile.setIcon(new ImageIcon(MainFrame.class.getResource("img/openFile.png")));
         JMenu copyMyDump = new JMenu("Копировать");
-        copyMyDump.setIcon(new ImageIcon(MainFrame.class.getResource("img/copy.png")));
+        //copyMyDump.setIcon(new ImageIcon(MainFrame.class.getResource("img/copy.png")));
         JMenuItem exportDump = new JMenuItem("Экспорт дампа");
-        exportDump.setIcon(new ImageIcon(MainFrame.class.getResource("img/import.png")));
+        //exportDump.setIcon(new ImageIcon(MainFrame.class.getResource("img/import.png")));
 
         mainFile.add(openMyFile);
         mainFile.add(copyMyDump);
@@ -56,7 +56,7 @@ public class MainFrame extends JFrame
 
         /**********Подменю для "справка"********/
         JMenuItem aboutProgram = new JMenuItem("О программе");
-        aboutProgram.setIcon(new ImageIcon(MainFrame.class.getResource("img/info.png")));
+        //aboutProgram.setIcon(new ImageIcon(MainFrame.class.getResource("img/info.png")));
         JMenuItem aboutAuthor = new JMenuItem("Об авторе");
 
         reference.add(aboutProgram);
@@ -74,8 +74,8 @@ public class MainFrame extends JFrame
 
         JButton buttonOpen = new JButton();
         buttonOpen.setText("Открыть файл");
-        ImageIcon icon = new ImageIcon(MainFrame.class.getResource("img/openFile.png"));
-        buttonOpen.setIcon(icon);
+        //ImageIcon icon = new ImageIcon(MainFrame.class.getResource("img/openFile.png"));
+        //buttonOpen.setIcon(icon);
         buttonOpen.setBounds(250,10,200,30);
         panel.add(buttonOpen);
 
@@ -131,8 +131,8 @@ public class MainFrame extends JFrame
 
         JButton importDump = new JButton();
         importDump.setText("Экспортировать дамп");
-        ImageIcon iconForImport = new ImageIcon(MainFrame.class.getResource("img/import.png"));
-        importDump.setIcon(iconForImport);
+        //ImageIcon iconForImport = new ImageIcon(MainFrame.class.getResource("img/import.png"));
+        //importDump.setIcon(iconForImport);
         importDump.setBounds(250,480,200,50);
         panel.add(importDump);
         /****************Конец кнопки копирования***************/
